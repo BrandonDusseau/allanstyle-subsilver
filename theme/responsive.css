@@ -582,6 +582,8 @@
 
 @media (max-width: 850px) {
 	.postprofile { width: 28%; }
+
+
 }
 
 @media (min-width: 701px) and (max-width: 950px) {
@@ -600,5 +602,14 @@
 
 	dd.posts, dd.topics, dd.views {
     	width: 80px;
+	}
+}
+
+@media (max-width: 992px) {
+	.row .pagination {
+		text-align: left;
+		float: left;
+		margin-top: 4px;
+		margin-bottom: 4px;
 	}
 }
