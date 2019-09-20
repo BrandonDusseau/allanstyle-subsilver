@@ -1003,8 +1003,15 @@ ul.topiclist li.row .responsive-hide {
 /* Miscellaneous styles
 ---------------------------------------- */
 .copyright {
-	padding: 1px 5px 5px;
+	font-size: 10px;
 	text-align: center;
+	padding: 10px;
+}
+
+.footer-row {
+	font-size: 10px;
+	line-height: 1.8;
+	margin: 0;
 }
 
 .small {
@@ -1286,6 +1293,10 @@ ul.linklist:after,
 
 .dropdown-page-jump input.tiny {
 	width: 50px;
+}
+
+.dropdown .clone.hidden  {
+	display: none;
 }
 
 .dropdown .clone.hidden + li.separator {
