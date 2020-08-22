@@ -587,7 +587,7 @@ fieldset.polls dd div {
     border-right: 1px solid #d5dbe0 !important;
 }
 
-.postprofile .avatar img {	
+.postprofile .avatar img {
 	background-color: white;
 	border: 1px solid #d3d9de;
 	box-shadow: 0 0 7px gray;
@@ -706,6 +706,11 @@ Colours and backgrounds for buttons.css
 
 .search-header {
 	box-shadow: 0 0 50px #999999;
+}
+
+.search-results li:hover,
+.search-results li.active {
+	background-color: #CFE1F6;
 }
 
 /* Icon images
