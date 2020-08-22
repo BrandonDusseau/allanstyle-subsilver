@@ -282,7 +282,7 @@ dd.option {
 }
 
 .search .postbody {
-	width: 68%
+	width: 68%;
 }
 
 /* Topic review panel
@@ -490,7 +490,7 @@ blockquote cite:before, .uncited:before {
 	padding-right: 5px;
 }
 
-blockquote cite > div {
+blockquote cite > span {
 	float: right;
 	font-weight: normal;
 }
