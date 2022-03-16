@@ -1,5 +1,8 @@
 /* Content Styles
 ---------------------------------------- */
+.profile-rank img {
+	max-width: 160px;
+}
 
 ul.topiclist {
 	display: block;
