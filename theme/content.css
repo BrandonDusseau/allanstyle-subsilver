@@ -1,8 +1,5 @@
 /* Content Styles
 ---------------------------------------- */
-.profile-rank img {
-	max-width: 160px;
-}
 
 ul.topiclist {
 	display: block;
@@ -21,7 +18,7 @@ ul.topiclist dl {
 }
 
 ul.topiclist li.row dl {
-	padding: 2px 0;
+	margin: 2px 0;
 }
 
 ul.topiclist dt, ul.topiclist dd {
@@ -73,6 +70,11 @@ ul.topiclist dd {
 	box-sizing: border-box;
 }
 
+ul.topiclist li.row dd {
+	padding: 4px 0 999px 0;
+	margin-bottom: -995px;
+}
+
 ul.topiclist dfn {
 	/* Labels for post/view counts */
 	position: absolute;
@@ -80,14 +82,14 @@ ul.topiclist dfn {
 	width: 990px;
 }
 
-.forum-image img {
-	max-width: 100%;
-}
-
 .forum-image {
 	float: left;
 	padding-top: 5px;
 	margin-right: 5px;
+}
+
+.forum-image img {
+	max-width: 100%;
 }
 
 li.row {
@@ -100,7 +102,7 @@ li.row strong {
 }
 
 li.header dt, li.header dd {
-	line-height: 1.6em;
+	line-height: 1em;
 	border-left-width: 0;
 	margin: 7px 0 5px 0;
 	padding-top: 2px;
@@ -139,6 +141,8 @@ li.header dl.row-item dt .list-inner {
 }
 
 /* Forum list column styles */
+.row .list-inner { padding: 4px 0; }
+
 dl.row-item {
 	background-position: 10px 50%;		/* Position of folder icon */
 	background-repeat: no-repeat;
@@ -150,16 +154,12 @@ dl.row-item dt {
 	background-size: 17px;
 }
 
-.topiclist.forums li.row dl.row-item dt .list-inner{
-	padding-left: 63px;					/* Space for folder icon */
-}
-
-.topiclist.topics li.row dl.row-item dt .list-inner {
-	padding-left: 40px;					/* Space for topic icon */
+.topiclist.forums li.row dl.row-item dt .list-inner {
+    padding-left: 63px;
 }
 
 dl.row-item dt .list-inner {
-	padding-left: 40px;					/* Space for topic icon */
+	padding-left: 40px;			/* Space for folder icon */
 }
 
 dl.row-item dt, dl.row-item dd {
@@ -170,7 +170,7 @@ dl.row-item dt a {
 	display: inline;
 }
 
-dl a.row-item-link {						/* topic row icon links */
+dl a.row-item-link {				/* topic row icon links */
 	display: block;
 	width: 30px;
 	height: 30px;
@@ -520,16 +520,17 @@ blockquote cite > span {
 
 /* Code block */
 .codebox {
-	padding: 3px;
 	border: 1px solid transparent;
 	font-size: 1em;
 	margin: 1em 0 1.2em 0;
+	word-wrap: normal;
 }
 
 .codebox p {
 	text-transform: uppercase;
 	border-bottom: 1px solid transparent;
-	margin-bottom: 3px;
+	margin-bottom: 0;
+	padding: 3px;
 	font-size: 0.8em !important;
 	font-weight: bold;
 	display: block;
@@ -544,15 +545,15 @@ blockquote .codebox {
 	display: block;
 	height: auto;
 	max-height: 200px;
-	padding-top: 5px;
+	padding: 5px 3px;
 	font: 0.9em Monaco, "Andale Mono","Courier New", Courier, monospace;
 	line-height: 1.3em;
-	margin: 2px 0;
 }
 
 /* Attachments
 ----------------------------------------*/
 .attachbox {
+	font-size: 13px;
 	float: left;
 	width: auto;
 	max-width: 100%;
@@ -576,6 +577,7 @@ blockquote .codebox {
 	clear: left;
 	border-top: 1px solid transparent;
 	overflow-x: auto;
+	overflow-y: hidden;
 }
 
 .attachbox dd dd {
@@ -718,7 +720,7 @@ fieldset.polls dd div {
 
 /* Poster profile block
 ----------------------------------------*/
-#subsilver-nav-topic {
+.subsilver-nav-topic {
 	display: block;
 	font-weight: bold;
 	line-height: 16px;
@@ -726,7 +728,7 @@ fieldset.polls dd div {
 	padding: 3px 10px;
 }
 
-#subsilver-nav-topic .post.has-profile {
+.subsilver-nav-topic .post.has-profile {
 	border: none;
 }
 
@@ -782,6 +784,10 @@ fieldset.polls dd div {
 	margin-bottom: 10px;
 }
 
+.profile-rank img {
+	max-width: 160px;
+}
+
 /* Post-profile avatars */
 .postprofile .has-avatar .avatar-container {
 	margin-bottom: 3px;
@@ -798,10 +804,10 @@ fieldset.polls dd div {
 	display: block;
 	height: auto !important;
 	max-width: 100%;
-    border-radius: 7px;
+	border-radius: 7px;
 	margin: 0;
-    opacity: 0.9;
-    padding: 0;
+	opacity: 0.9;
+	padding: 0;
 }
 
 .avatar-container {
@@ -901,16 +907,6 @@ table.fixed-width-table {
 	table-layout: fixed;
 }
 
-/* Memberlist
-----------------------------------------*/
-.group-description {
-	font-size: 1.3em;
-}
-
-.group-description ol, .group-description ul {
-	list-style-position: inside;
-}
-
 /* Show scrollbars for items with overflow on iOS devices
 ----------------------------------------*/
 .postbody .content::-webkit-scrollbar, .topicreview::-webkit-scrollbar, .post_details::-webkit-scrollbar, .codebox code::-webkit-scrollbar, .attachbox dd::-webkit-scrollbar, .attach-image::-webkit-scrollbar, .dropdown-extended ul::-webkit-scrollbar {
@@ -928,4 +924,14 @@ table.fixed-width-table {
 
 #memberlist tr.inactive, #team tr.inactive {
 	font-style: italic;
+}
+
+/* Memberlist
+----------------------------------------*/
+.group-description {
+	font-size: 1.3em;
+}
+
+.group-description ol, .group-description ul {
+	list-style-position: inside;
 }

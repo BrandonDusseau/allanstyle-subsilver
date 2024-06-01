@@ -193,6 +193,6 @@ ul.linklist.bulletin > li.small-icon:before {
 }
 
 /* Allan Style */
-.button					{text-shadow: none;}
-.post-buttons > li		{opacity: 0.6;}
-.post-buttons > li:hover	{opacity: 1;}
+.button				{ text-shadow: none; }
+.post-buttons > li		{ opacity: 0.6; }
+.post-buttons > li:hover	{ opacity: 1; }

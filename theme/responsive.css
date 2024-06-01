@@ -111,8 +111,8 @@
 	.responsive-show { display: block !important; }
 	.responsive-show-inline { display: inline !important; }
 	.responsive-show-inline-block { display: inline-block !important; }
-	.wrap {padding: 0;}
-	#subsilver-nav-topic {display: none;}
+	.wrap { padding: 0; }
+	.subsilver-nav-topic { display: none; }
 
 	/* Content wrappers
 	----------------------------------------*/
@@ -270,11 +270,6 @@
 		margin: 5px 0 0;
 	}
 
-	.row .pagination {
-		margin-top: 2px;
-		margin-bottom: 2px;
-	}
-
 	.row .pagination .ellipsis + li {
 		display: none !important;
 	}
@@ -339,7 +334,7 @@
 	}
 
 	fieldset dd, fieldset.fields1 dd, fieldset.fields2 dd {
-		margin-left: 20px;
+		margin-left: 0;
 	}
 
 	textarea, dd textarea, .message-box textarea {
@@ -455,8 +450,7 @@
 		width: auto;
 		border-width: 0 0 1px 0;
 		padding-bottom: 5px;
-		margin: 0;
-		margin-bottom: 5px;
+		margin: 0 0 5px 0;
 		min-height: 40px;
 		overflow: hidden;
 	}
@@ -548,7 +542,7 @@
 	}
 
 	.trigger {
- 	   margin-top: -24px;
+		margin-top: -24px;
 	}
 
 	table.table1 tbody td.posts {
@@ -572,29 +566,15 @@
 }
 
 @media (min-width: 701px) and (max-width: 950px) {
-	.row .pagination {
-		margin-top: 2px;
-		margin-bottom: 2px;
-	}
-
 	ul.topiclist dt {
-    	margin-right: -410px;
+		margin-right: -410px;
 	}
 
 	ul.topiclist dt .list-inner {
-    	margin-right: 410px;
+		margin-right: 410px;
 	}
 
 	dd.posts, dd.topics, dd.views {
-    	width: 80px;
-	}
-}
-
-@media (max-width: 992px) {
-	.row .pagination {
-		text-align: left;
-		float: left;
-		margin-top: 4px;
-		margin-bottom: 4px;
+		width: 80px;
 	}
 }
